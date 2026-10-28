@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <meta name="description" content="Un pequeño rincón creado con cariño para Paula.">
+  <title>Para Paula — algo especial ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Ctext x='32' y='46' font-size='48' text-anchor='middle' fill='%23ef789b'%3E%E2%99%A5%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <noscript><p class="noscript-note">Esta página necesita JavaScript activado para poder abrirse. Actívalo y vuelve a cargarla. ♡</p></noscript>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+  <div id="hearts-layer" class="hearts-layer" aria-hidden="true"></div>
+
+  <main class="site-shell">
+    <header class="site-header">
+      <a class="brand" href="#pag1" data-page="pag1" aria-label="Volver al inicio"><span class="brand-mark">P<span>♡</span></span><span class="brand-name">PARA PAULA</span></a>
+      <span class="header-note"><span class="live-dot"></span> UN RINCÓN SOLO NUESTRO</span>
+    </header>
+
+    <section id="pag1" class="page active hero-page">
+      <div class="hero-kicker"><span></span> HECHO PENSANDO EN TI <span></span></div>
+      <div class="hero-art" aria-hidden="true">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="heart-glass"><span>♥</span></div>
+        <span class="star star-a">✦</span><span class="star star-b">✧</span><span class="star star-c">·</span>
+      </div>
+      <h1>¿Me quieres<br><em>mucho?</em></h1>
+      <p class="hero-description">He preparado algo pequeñito para ti.<br>Pero antes…</p>
+      <div class="buttons-row">
+        <button id="btn-si" class="button button-primary" type="button">Sí, muchísimo <span>♥</span></button>
+        <button id="btn-no" class="button button-quiet" type="button">No 😶</button>
+      </div>
+      <p class="microcopy">Pista: hay una respuesta que me haría sonreír.</p>
+      <div class="scroll-cue"><span></span> UNA PEQUEÑA SORPRESA TE ESPERA</div>
+    </section>
+
+    <section id="pag2" class="page menu-page">
+      <div class="section-heading">
+        <p class="eyebrow">Me alegra que estés aquí</p>
+        <h1>Esto es para <em>ti.</em></h1>
+        <p>Unas cuantas cosas que quería compartir contigo. Ve abriéndolas a tu ritmo; la última tiene que esperar un poquito (abrela la ultima). ♡</p>
+      </div>
+
+      <div class="counter-card">
+        <div class="counter-symbol">∞</div>
+        <div class="counter-copy"><span class="counter-label">UN PEQUEÑO RECORDATORIO</span><strong>Hay muchas razones para quererte</strong><small>Y hoy quería recordartelo una vez más.</small></div>
+        <div class="counter-heart">♥</div>
+      </div>
+
+      <div class="menu-grid">
+        <button class="menu-card" type="button" data-page="pag-sobres">
+          <span class="card-number">01 / ABRE</span><span class="menu-icon">✉</span>
+          <strong>Un sobre para ti</strong><small>Pequeños mensajes que puedes descubrir</small><span class="card-link">DESCUBRIR <b>↗</b></span>
+        </button>
+        <button class="menu-card" type="button" data-page="pag-carta">
+          <span class="card-number">02 / LEE</span><span class="menu-icon">♡</span>
+          <strong>Unas palabras</strong><small>Algo que quería decirte desde hace tiempo</small><span class="card-link">LEER CARTA <b>↗</b></span>
+        </button>
+        <button class="menu-card" type="button" data-page="pag-juego">
+          <span class="card-number">03 / JUEGA</span><span class="menu-icon">✧</span>
+          <strong>Atrapa el corazón</strong><small>Un pequeño reto solo para ti</small><span class="card-link">JUGAR <b>↗</b></span>
+        </button>
+        <button class="menu-card" type="button" data-page="pag-fotos">
+          <span class="card-number">04 / RECUERDA</span><span class="menu-icon">▧</span>
+          <strong>Nuestros recuerdos</strong><small>Un espacio para esos momentos especiales</small><span class="card-link">VER RECUERDOS <b>↗</b></span>
+        </button>
+      </div>
+
+      <div class="together-counter">
+        <div class="counter-orbit">♡</div>
+        <div><p class="eyebrow">Cada momento cuenta</p><h2>El tiempo es mejor<br>cuando estás <em>tú.</em></h2><p class="counter-subtitle">Si quieres, podemos contar los días desde una fecha especial.</p></div>
+        <div class="date-control"><label for="start-date">Nuestra fecha</label><input id="start-date" type="date"><p id="days-count">Elige una fecha para empezar ✨</p></div>
+      </div>
+
+      <button class="final-teaser" id="btn-final-teaser" type="button" data-page="pag-final"><span class="teaser-icon">✦</span><span><small>GUARDADO PARA EL FINAL</small><strong>Una última sorpresa, Paula</strong></span><span class="teaser-arrow">↗</span></button>
+      <p class="closing-note">Diseñado con cariño, solo para ti. <span>♥</span></p>
+    </section>
+
+    <section id="pag-sobres" class="page subpage">
+      <div class="back-top"><button class="text-back" type="button" data-page="pag2">← Volver al menú</button><span>01 — PEQUEÑOS MENSAJES</span></div>
+      <div class="section-heading compact"><p class="eyebrow">Elige uno, cualquiera</p><h1>Un sobre <em>para ti.</em></h1><p>Cada sobre guarda una pequeña razón para sacarte una sonrisa.</p></div>
+      <div class="envelope-grid">
+        <button class="envelope" type="button" data-message="Me encanta poder compartir momentos contigo, incluso los más sencillos, a veces son los mejores solo por que tu formas parte de ellos. ♡"><span class="envelope-number">01</span><span class="envelope-art">✉<i>♥</i></span><strong>Ábreme cuando quieras sonreír</strong><small>UN MENSAJE PARA TI</small></button>
+        <button class="envelope" type="button" data-message="Ojalá nunca te falten motivos para recordar lo mucho que te quiero, aun que a veces la cage por tonterias. Y si algún día piensas que no te quiero, aquí estaré para recordártelo. ✨"><span class="envelope-number">02</span><span class="envelope-art">✉<i>✦</i></span><strong>Ábreme cuando quiras recordar lo mucho que te quiero</strong><small>UN RECORDATORIO BONITO</small></button>
+        <button class="envelope" type="button" data-message="No hace falta que pase algo enorme para que un día sea especial. A veces basta con hablar contigo y saber que estás ahí. 💗"><span class="envelope-number">03</span><span class="envelope-art">✉<i>♡</i></span><strong>Ábreme porque sí</strong><small>PORQUE TE LO MERECES</small></button>
+      </div>
+      <div id="envelope-message" class="message-reveal" aria-live="polite"><span class="reveal-mark">♡</span><p>Tu mensaje aparecerá aquí.</p><small>ELIGE UN SOBRE PARA DESCUBRIRLO</small></div>
+      <button class="button button-primary lower-button" type="button" data-page="pag2">Volver a las sorpresas <span>↗</span></button>
+    </section>
+
+    <section id="pag-carta" class="page subpage">
+      <div class="back-top"><button class="text-back" type="button" data-page="pag2">← Volver al menú</button><span>02 — UNAS PALABRAS</span></div>
+      <article class="letter-panel">
+        <div class="letter-top"><span>UNA CARTA PARA PAULA</span><span>♡</span></div>
+        <div class="letter-seal">P</div>
+        <p class="eyebrow">Con todo mi cariño</p>
+        <h1>Per <em> a tu,</em></h1>
+        <div class="letter-rule"><span>✦</span></div>
+        <p>Quería hacerte algo diferente, y como ya sabes que no se me dan bien las manulidades, he pensado que que mejor que siendo iformatico, que una pagina web jajaja. Y bueno, me sabia mal que tu siempre me hagas cosas y yo no, por que no me salen bien.</p>
+        <p>Gracias por la pacienca que tienes tu tambien conmigo, por las sonrisas y por todas esos pequeños momentos que estamos creando sin darnos cuenta.</p>
+        <p>Ojalá nos queden muchísimos recuerdos por crear, lugares por descubrir y tonterías de las que reírnos. Y que, cuando vuelvas a esta página, te saque aunque sea una sonrisa.</p>
+        <p class="letter-signature">Te quiero mucho, Paula. <span>♥</span></p>
+        <div class="letter-bottom">ESCRITO CON CARIÑO · SOLO PARA TI</div>
+      </article>
+      <button class="button button-secondary lower-button" type="button" data-page="pag2">Volver al menú <span>↗</span></button>
+    </section>
+
+    <section id="pag-juego" class="page subpage">
+      <div class="back-top"><button class="text-back" type="button" data-page="pag2">← Volver al menú</button><span>03 — UN PEQUEÑO RETO</span></div>
+      <div class="section-heading compact"><p class="eyebrow">¿Preparada?</p><h1>El laberinto del <em>corazón.</em></h1><p>Como tu me hiciste un juego en tu libro me ha apetecido hacerte otro a ti, parece facil, pero hacerlo no lo hes tanto jajaja. Y ahora una pequeña explicacion de que hay que hacer en el juego: <br>Recoge los 8 corazones y llega a la salida sin que te atrapen. ¡Tú puedes!</p></div>
+      <div class="game-panel pacman-panel">
+        <div class="game-topline"><span>UNA MISIÓN PARA TI</span><span id="game-level">BUSCA LA SALIDA</span></div>
+        <div id="game-area" class="maze-area" aria-describedby="game-message">
+          <div id="maze-grid" class="maze-grid" aria-hidden="true">
+            <div id="maze-player" class="maze-player" aria-hidden="true">♥</div>
+            <div id="maze-enemy" class="maze-enemy" aria-hidden="true">✦</div>
+            <div id="maze-goal" class="maze-goal" aria-hidden="true">♡</div>
+          </div>
+        </div>
+        <div class="score-row maze-score-row"><div><small>CORAZONES</small><strong><span id="game-score" aria-live="polite">0</span><span class="score-total"> / 8</span></strong></div><div class="score-best"><small>OBJETIVO</small><strong>Llegar a la salida <span>♥</span></strong></div><button id="reset-game" class="reset-button" type="button">Reintentar ↻</button></div>
+        <div class="maze-controls" aria-label="Controles del juego">
+          <button type="button" data-direction="up" aria-label="Mover arriba">↑</button>
+          <div><button type="button" data-direction="left" aria-label="Mover a la izquierda">←</button><button type="button" data-direction="down" aria-label="Mover abajo">↓</button><button type="button" data-direction="right" aria-label="Mover a la derecha">→</button></div>
+        </div>
+        <p id="game-message" class="game-message" aria-live="polite">Usa las flechas o WASD para moverte, o desliza el dedo sobre el laberinto. Recoge los corazones y evita al fantasma.</p>
+        <div id="game-result" class="game-result" hidden aria-live="polite"><p id="game-result-message"></p><button id="retry-game" class="button button-primary" type="button">Jugar otra vez <span>↻</span></button></div>
+      </div>
+      <button class="button button-secondary lower-button" type="button" data-page="pag2">Volver al menú <span>↗</span></button>
+    </section>
+
+    <section id="pag-fotos" class="page subpage">
+      <div class="back-top"><button class="text-back" type="button" data-page="pag2">← Volver al menú</button><span>04 — NUESTROS RECUERDOS</span></div>
+      <div class="section-heading compact"><p class="eyebrow">Pequeños instantes, grandes recuerdos</p><h1>Momentos <em>nuestros.</em></h1><p>Tres recuerdos que quiero compartir contigo y, debajo, un pequeño espacio para que añadas los tuyos si te apetece. ♡</p></div>
+      <div class="memory-group">
+        <div class="memory-group-heading"><span>01 — 03</span><div><h2>Mis recuerdos para ti</h2><p>Tres momentos que he elegido con cariño.</p></div></div>
+        <div class="photo-gallery">
+          <!-- Cambia estos src por las rutas de tus fotos. Ejemplo: images/recuerdo-1.jpg -->
+          <article class="memory-photo photo-a fixed-memory"><img src="images/especial.jpeg" alt="Nuestro primer recuerdo"><div class="photo-caption"><small>MI RECUERDO 01</small><strong>Un día especial</strong></div></article>
+          <article class="memory-photo photo-b fixed-memory"><img src="images/sonrisa.jpeg" alt="Una sonrisa de Paula"><div class="photo-caption"><small>MI RECUERDO 02</small><strong>Una sonrisa tuya</strong></div></article>
+          <article class="memory-photo photo-c fixed-memory"><img src="images/momento.jpeg" alt="Un momento juntos"><div class="photo-caption"><small>MI RECUERDO 03</small><strong>Un momento juntos</strong></div></article>
+        </div>
+      </div>
+      <div class="memory-group hers-group">
+        <div class="memory-group-heading"><span>04 — 06</span><div><h2>Tus recuerdos, si quieres</h2><p>Paula, este espacio es para ti. Puedes añadir fotos si te apetece, o dejarlo vacío.</p></div></div>
+        <div class="photo-gallery">
+          <label class="memory-photo photo-a" for="photo-upload-4"><input type="file" accept="image/*" id="photo-upload-4" class="photo-upload"><span class="photo-placeholder-icon">＋</span><span class="photo-caption"><small>TU RECUERDO 01</small><strong>Un recuerdo que te guste</strong></span><button type="button" class="photo-remove" data-photo="photo-upload-4" aria-label="Quitar la foto del recuerdo 1" hidden>Quitar ✕</button></label>
+          <label class="memory-photo photo-b" for="photo-upload-5"><input type="file" accept="image/*" id="photo-upload-5" class="photo-upload"><span class="photo-placeholder-icon">＋</span><span class="photo-caption"><small>TU RECUERDO 02</small><strong>Un momento feliz</strong></span><button type="button" class="photo-remove" data-photo="photo-upload-5" aria-label="Quitar la foto del recuerdo 2" hidden>Quitar ✕</button></label>
+          <label class="memory-photo photo-c" for="photo-upload-6"><input type="file" accept="image/*" id="photo-upload-6" class="photo-upload"><span class="photo-placeholder-icon">＋</span><span class="photo-caption"><small>TU RECUERDO 03</small><strong>Un momento nuestro</strong></span><button type="button" class="photo-remove" data-photo="photo-upload-6" aria-label="Quitar la foto del recuerdo 3" hidden>Quitar ✕</button></label>
+        </div>
+      </div>
+      <p class="photo-note">Las tres primeras fotos están vinculadas desde el código y se quedan puestas al abrir la web. Para cambiarlas, sustituye los archivos de la carpeta <code>images</code> o cambia sus rutas en el HTML. Las tres de abajo son opcionales: las fotos que añadas se guardan en este navegador y seguirán ahí al volver. Si cambias de idea, pulsa <strong>Quitar ✕</strong> sobre la foto y se borrará.</p>
+      <button class="button button-secondary lower-button" type="button" data-page="pag2">Volver al menú <span>↗</span></button>
+    </section>
+
+    <section id="pag-final" class="page subpage final-page">
+      <div class="final-sparkle">✦　·　♡　·　✦</div>
+      <div class="hero-art final-art" aria-hidden="true"><div class="orbit orbit-a"></div><div class="orbit orbit-b"></div><div class="heart-glass"><span>♥</span></div><span class="star star-a">✦</span><span class="star star-b">✧</span></div>
+      <p class="eyebrow">La última, como te prometí</p>
+      <h1>Para ti,<br><em>Paula.</em></h1>
+      <div class="final-divider"></div>
+      <p class="final-message">No hace falta que hoy sea un día señalado para hacerte saber que eres alguien especial para mí.</p>
+      <p class="final-message">Espero que esta pequeña sorpresa te haya hecho sonreír. Y si lo ha conseguido, entonces ya ha merecido la pena crearla.</p>
+      <p class="final-signoff">Esto es solo una pequeña parte de todo el cariño que te tengo. <span>♥</span></p>
+      <button id="surprise-button" class="button button-primary surprise-button" type="button">Pulsa aquí para la sorpresa final <span>✦</span></button>
+      <p id="surprise-message" class="surprise-message" aria-live="polite"></p>
+      <button class="text-back final-back" type="button" data-page="pag2">← Volver a todas las sorpresas</button>
+    </section>
+
+    <footer class="site-footer"><span>PARA PAULA</span><span class="footer-heart">♥</span><span>HECHO CON CARIÑO</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
