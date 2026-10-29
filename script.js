@@ -6,6 +6,7 @@
 
 const DEFAULT_PAGE = 'pag1';
 const GAME_PAGE = 'pag-juego';
+const reduceMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)');
 
 const PAGE_TITLES = {
   'pag1': 'Para Paula — algo especial ♡',
@@ -42,7 +43,9 @@ function showPage(pageId, options = {}) {
     }
   }
 
-  window.scrollTo({ top: 0, behavior: smooth ? 'smooth' : 'auto' });
+  // Respetamos la preferencia de reducir movimiento también aquí, porque
+  // el CSS por sí solo no puede anular un scroll suave lanzado desde JS.
+  window.scrollTo({ top: 0, behavior: smooth && !reduceMotionQuery.matches ? 'smooth' : 'auto' });
 
   // El minijuego solo avanza mientras su página está abierta.
   if (pageId === GAME_PAGE) resumeGame();
@@ -575,11 +578,7 @@ photoInputs.forEach((input) => {
 });
 
 photoRemoveButtons.forEach((button) => {
-  button.addEventListener('click', (event) => {
-    // Sin esto, el clic dentro de la etiqueta abriría el selector de archivos.
-    event.preventDefault();
-    event.stopPropagation();
-
+  button.addEventListener('click', () => {
     const input = document.getElementById(button.dataset.photo);
     if (input) clearPhoto(input);
   });
@@ -598,8 +597,7 @@ function launchHearts() {
   if (!heartsLayer) return;
 
   const symbols = ['♥', '♡', '✦', '❤'];
-  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const total = reduceMotion ? 8 : 34;
+  const total = reduceMotionQuery.matches ? 8 : 34;
 
   for (let i = 0; i < total; i += 1) {
     const heart = document.createElement('span');

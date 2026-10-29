@@ -1,10 +1,14 @@
 TUS TRES FOTOS
 
-En index.html, busca la sección 04 — NUESTROS RECUERDOS. Las tres imágenes están vinculadas así:
-- images/recuerdo-1.svg
-- images/recuerdo-2.svg
-- images/recuerdo-3.svg
+En index.html, dentro de la sección "04 — NUESTROS RECUERDOS", las tres fotos fijas están vinculadas así:
+- images/especial.jpeg
+- images/sonrisa.jpeg
+- images/momento.jpeg
 
-Puedes sustituir esos archivos SVG por tus fotos (por ejemplo recuerdo-1.jpg) y cambiar la extensión en el atributo src de cada img en index.html. También puedes simplemente cambiar los src para apuntar a los nombres de tus fotos.
+Para cambiarlas, sustituye esos archivos por tus fotos (puedes mantener los nombres) o cambia la ruta del atributo src de cada <img>. Si usas otros nombres de archivo, actualiza también el src correspondiente.
 
-El minijuego ya está actualizado a un laberinto tipo Pac-Man: recoge 8 corazones, evita al fantasma y llega a la salida. Si pierdes aparece el mensaje de ánimo y el botón para reintentar; si ganas aparece el mensaje de victoria.
+Los antiguos recuerdo-1.svg, recuerdo-2.svg y recuerdo-3.svg ya no se usan; puedes ignorarlos o borrarlos si quieres.
+
+Las tres tarjetas de abajo ("Tus recuerdos, si quieres") son opcionales y se rellenan desde la propia página: la foto se comprime antes de guardarse en el navegador y se puede quitar con el botón "Quitar ✕".
+
+El minijuego es un laberinto tipo Pac-Man: recoge 8 corazones, evita al fantasma y llega a la salida. Si pierdes aparece el mensaje de ánimo y el botón para reintentar; si ganas, aparece el mensaje de victoria.
